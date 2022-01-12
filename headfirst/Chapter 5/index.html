@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPod</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<h1>Welcome to MyPod</h1>
+<p>
+    Welcome to the place to show off your iPod, wherever you might be. 
+    Wanna join the fun? All you need is any iPod from, the early classic iPod to the latest iPod Nano, 
+    the smallest iPod Shuffle to the largest iPod Video, and a digital camera. 
+    Just take a snapshot of your iPod in your favorite location and we'll be glad to post it on myPod. 
+    So, what are you waiting for?
+</p>
+<h2>Seattle, Washington</h2>
+<p>
+    Me and my iPod in Seattle! You can see the
+    Space Needle. You can't see the 628 coffee shops.
+</p>
+
+<footer id="vLinks" style="text-align: center;">
+    </footer>
+    <script>
+        var loc = window.location.href;
+    
+        var linkStr = '<a href="http://validator.w3.org/check?uri=';
+        linkStr += loc;
+        linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
+        linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
+        linkStr += loc;
+        linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
+        console.log(linkStr);
+    
+        var footer = document.getElementById("vLinks");
+        console.log(footer);
+        footer.innerHTML = linkStr;
+    </script>
+</body>
+</html>
