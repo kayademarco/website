@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/indexfavicon.png" type="image/x-icon">
+    <title>Kaya's Home Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 4cm;
+            margin-right: 4cm;
+            margin-top: 1cm;
+            margin-bottom: 1cm;
+            background-color:rgb(252, 245, 250);
+        }
+        h1 {
+          color: rgb(41, 104, 85);
+          text-align: center;
+          font-style: italic;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {color: rgb(61, 148, 122);
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        ul {font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            border-radius: 2cm;
+            border-color: white;
+            border-style:solid;
+            border-width: 0.3cm;
+            padding: 1cm;
+            margin: auto;
+            text-align: center;
+        }
+        a { 
+            font-family: Arial, Helvetica, sans-serif;
+            color: deeppink;
+        }
+        a:hover {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgb(190, 16, 109)
+        }
+        a:visited {
+            color: rgb(248, 122, 189);
+        }
+        footer {text-align: center;
+                padding: 10px;
+        }
+        .titlelink :visited {
+            color: rgb(61, 148, 122)
+        }
+        .titlelink :hover {
+            color: rgb(61, 148, 122)
+        }
+    </style>
+</head>
+<body>
+<h1>Kaya's Web Page Design Work!</h1>
+<h2>Classwork</h2>
+    <ul>
+        <li><a href="gdw">Getting Down With Lessons</a></li>
+        <li><a href="headfirst">Headfirst Practice Lessons</a></li>
+    </ul>
+<h2>Projects</h2>
+    <ul>
+        <li><a href="DeMarcoIP/demarcoip.html">Revamping DeMarcoIP</a></li>
+        <li><a href="resume/index.html">Resume</a></li>
+    </ul>
+<h2 class="titlelink"><a href="experiments">Experiments and Mini-Projects</a></h2>
+    <ul>
+        <li><a href="experiments/xmasproject/index.html">Christmas Project</a></li>
+    </ul>
+<br>
+<footer id="vLinks" style="text-align: center;">
+    </footer>
+    <script>
+        var loc = window.location.href;
+
+        var linkStr = '<a href="http://validator.w3.org/check?uri=';
+        linkStr += loc;
+        linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
+        linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
+        linkStr += loc;
+        linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
+        console.log(linkStr);
+    
+        var footer = document.getElementById("vLinks");
+        console.log(footer);
+        footer.innerHTML = linkStr;
+    </script>
+</body>
+</html>
