@@ -19,7 +19,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: rgb(255, 255, 255);
             }
 
         .menu-bar__button {
@@ -28,14 +28,14 @@
 
         .menu-bar__button a, .menu-bar__dropdown__heading {
             display: inline-block;
-            color: white;
+            color: rgb(26, 122, 74);
             text-align: center;
             padding: 18px 16px;
             text-decoration: none;
             }
 
         .menu-bar__button a:hover, .menu-bar__dropdown:hover .menu-bar__dropdown__heading {
-            background-color: #5b5bff;
+            background-color: rgb(218, 255, 239);
             }
 
         li.menu-bar__dropdown {
@@ -69,14 +69,15 @@
             text-align: left;
             }
 
-        .menu-bar__dropdown__content .menu-bar__dropdown__content--link:hover {background-color: #a9a9ff}
+        .menu-bar__dropdown__content .menu-bar__dropdown__content--link:hover {
+            background-color: rgb(218, 255, 239)}
 
         .menu-bar__dropdown:hover .menu-bar__dropdown__content {
             display: block;
             }
         
         a.menu-bar__dropdown__content--subheading:hover {
-            background-color: #6666e0}
+            background-color: rgb(198, 255, 230)}
         
         a { 
             font-family: Arial, Helvetica, sans-serif;
@@ -98,28 +99,12 @@
 <body>
 
 <ul id="menu-bar">
-    <li class="menu-bar__button">
-        <a href="">Home</a>
-    </li>
-    <li class="menu-bar__button">
-        <a href="">About Me</a>
-    </li>
-    <li class="menu-bar__button">
-        <a href="/resume/index.html">Resume</a>
-    </li>
-    <li class="menu-bar_dropdown">
-        <a href="javascript:void(0)" class="menu-bar__dropdown__heading">Classes</a>
-        <div class="menu-bar__dropdown__content">
-            <a href="/webdesign/index.html">Web Page Design</a>
-            <a href="">Animation</a>
-            <a href="">Architecture</a>
-        </div>
-    </li>
 </ul>
 
 <footer id="vLinks" style="text-align: center;">
     </footer>
-    <script>
+    <script src="menu-bar.js"></script>
+    <script>    
         var loc = window.location.href;
     
         var linkStr = '<a href="http://validator.w3.org/check?uri=';
