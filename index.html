@@ -14,9 +14,70 @@
             font-family: Arial, Helvetica, sans-serif;
             list-style-type:none;
         }
-        .menu-bar {
+        #menu-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        .menu-bar__button {
+            float: left;
+            }
+
+        .menu-bar__button a, .menu-bar__dropdown__heading {
             display: inline-block;
-        }
+            color: white;
+            text-align: center;
+            padding: 18px 16px;
+            text-decoration: none;
+            }
+
+        .menu-bar__button a:hover, .menu-bar__dropdown:hover .menu-bar__dropdown__heading {
+            background-color: #5b5bff;
+            }
+
+        li.menu-bar__dropdown {
+            display: inline-block;
+            }
+
+        .menu-bar__dropdown__content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+        .menu-bar__dropdown__content--link {
+            color: #333333;
+            padding: 12px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+        .menu-bar__dropdown__content--subheading {
+            color: #ffffff;
+            background-color: #808080;
+            padding: 8px;
+            margin: 0px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+        .menu-bar__dropdown__content .menu-bar__dropdown__content--link:hover {background-color: #a9a9ff}
+
+        .menu-bar__dropdown:hover .menu-bar__dropdown__content {
+            display: block;
+            }
+        
+        a.menu-bar__dropdown__content--subheading:hover {
+            background-color: #6666e0}
+        
         a { 
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(26, 122, 74);
@@ -37,18 +98,18 @@
 <body>
 
 <ul id="menu-bar">
-    <li class="menu-bar_button">
+    <li class="menu-bar__button">
         <a href="">Home</a>
     </li>
-    <li class="menu-bar_button">
+    <li class="menu-bar__button">
         <a href="">About Me</a>
     </li>
-    <li class="menu-bar_button">
+    <li class="menu-bar__button">
         <a href="/resume/index.html">Resume</a>
     </li>
     <li class="menu-bar_dropdown">
-        <a href="javascript:void(0)" class="menu-bar_dropdown_heading">Classes</a>
-        <div class="menu-bar_dropdown_content">
+        <a href="javascript:void(0)" class="menu-bar__dropdown__heading">Classes</a>
+        <div class="menu-bar__dropdown__content">
             <a href="/webdesign/index.html">Web Page Design</a>
             <a href="">Animation</a>
             <a href="">Architecture</a>
