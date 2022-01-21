@@ -6,7 +6,78 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
+  <style>
+            #menu-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            border-style: solid;
+            border-radius: 2cm;
+            border-color: white;
+            }
+
+        .menu-bar__button {
+            float: left;
+            }
+
+        .menu-bar__button a, .menu-bar__dropdown__heading {
+            display: inline-block;
+            color: rgb(26, 122, 74);
+            text-align: center;
+            padding: 18px 16px;
+            text-decoration: none;
+            }
+
+        .menu-bar__button a:hover, .menu-bar__dropdown:hover .menu-bar__dropdown__heading {
+            font-weight: bold;
+            }
+
+        li.menu-bar__dropdown {
+            display: inline-block;
+            }
+
+        .menu-bar__dropdown__content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+        .menu-bar__dropdown__content--link {
+            color: #333333;
+            padding: 12px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+        .menu-bar__dropdown__content--subheading {
+            color: #ffffff;
+            background-color: #808080;
+            padding: 8px;
+            margin: 0px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+        .menu-bar__dropdown__content .menu-bar__dropdown__content--link:hover {
+            background-color: rgb(218, 255, 239)}
+
+        .menu-bar__dropdown:hover .menu-bar__dropdown__content {
+            display: block;
+            }
+        
+        a.menu-bar__dropdown__content--subheading:hover {
+            background-color: rgb(198, 255, 230)}
+        
+  </style>
   <body lang="en">
+  <ul id="menu-bar"></ul>
     <section id="main">
       <header id="title">
         <h1>Kaya DeMarco</h1>
@@ -241,4 +312,5 @@
       </div>
     </aside>
   </body>
+<script src="../menu-bar.js"></script>
 </html>

@@ -5,7 +5,7 @@ var menuStr =
     <a href="`+directoryDepth+`">Home</a>
     </li>
     <li class="menu-bar__button">
-    <a href="`+directoryDepth+`">About Me</a>
+    <a href="`+directoryDepth+`/aboutme/index.html">About Me</a>
     </li>
     <li class="menu-bar__button">
     <a href="`+directoryDepth+`/resume/index.html">Resume</a>
