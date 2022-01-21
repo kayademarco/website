@@ -35,37 +35,27 @@
     </style>
 </head>
 <body>
-<ul id="menu-bar"> <!--I want this to look like a one row table at the top (like the APS links bar). 
-How can I format this like that??-->
-    <li class="menu-bar_button"><a href="">Home</a></li>
-    <li><a>About Me</a></li>
-    <li><a href="webdesign/resume/index.html">Resume</a></li>
-    <li class="menu-bar_dropdown">Classes <!--this would be the label on the bar and 
-        then when you hover it shows the options/links-->
+
+<ul id="menu-bar">
+    <li class="menu-bar_button">
+        <a href="">Home</a>
+    </li>
+    <li class="menu-bar_button">
+        <a href="">About Me</a>
+    </li>
+    <li class="menu-bar_button">
+        <a href="/resume/index.html">Resume</a>
+    </li>
+    <li class="menu-bar_dropdown">
+        <a href="javascript:void(0)" class="menu-bar_dropdown_heading">Classes</a>
         <div class="menu-bar_dropdown_content">
-            <a href="webdesign/index.html" class="menu-bar_dropdown_content_link">Web Design</a>
-            <a>Animation</a>
-            <a>Architecture</a>
+            <a href="/webdesign/index.html">Web Page Design</a>
+            <a href="">Animation</a>
+            <a href="">Architecture</a>
         </div>
     </li>
-    <li></li>
-
-<!--The following is the "dropdown" info I found on google, 
-    but it is not exactly how I want this to look and work. Just for reference...-->
 </ul>
-    <label for="selector"> <!-- Can add label if want -->
-      <select id="selector"> <!-- Use "select" to create object -->
-        <option>Option 1</option> <!-- Add all applicable options -->
-        <option>Option 2</option>
-        <option selected>Option 3</option> <!-- add selected to change default from first option -->
-        <optgroup label="Group"> <!-- To create nested options for categories use "optgroup" -->
-          <option>Option 4</option>
-          <option>Option 5</option>
-      </select>
-    </label>
-<!--I could see myself using this google option bar IF there was one for each value in the top bar. 
-    aka each option would be a link to another page, but i'm not sure thats a good way to do it!-->
- 
+
 <footer id="vLinks" style="text-align: center;">
     </footer>
     <script>
