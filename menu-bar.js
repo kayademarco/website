@@ -5,15 +5,15 @@ var menuStr =
     <a href="`+directoryDepth+`">Home</a>
     </li>
     <li class="menu-bar__button">
-    <a href="`+directoryDepth+`/aboutme/index.html">About Me</a>
+    <a href="`+directoryDepth+`aboutme/index.html">About Me</a>
     </li>
     <li class="menu-bar__button">
-    <a href="`+directoryDepth+`/resume/index.html">Resume</a>
+    <a href="`+directoryDepth+`resume/index.html">Resume</a>
     </li>
     <li class="menu-bar__dropdown">
     <a href="javascript:void(0)" class="menu-bar__dropdown__heading">Classes</a>
     <div class="menu-bar__dropdown__content">
-        <a href="`+directoryDepth+`/webdesign/index.html" class="menu-bar__dropdown__content--link">Web Page Design</a>
+        <a href="`+directoryDepth+`webdesign/index.html" class="menu-bar__dropdown__content--link">Web Page Design</a>
         <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Animation</a>
         <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Architecture</a>
     </div>
