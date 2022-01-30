@@ -2,7 +2,7 @@ directoryDepth = "../".repeat(window.location.href.replace(/[^/A]/g, "").length-
 
 var menuStr =
     `<li class="menu-bar__button">
-    <a href="`+directoryDepth+` /website">Home</a>
+    <a href="`+directoryDepth+`website">Home</a>
     </li>
     <li class="menu-bar__button">
     <a href="`+directoryDepth+`website/aboutme/index.html">About Me</a>
