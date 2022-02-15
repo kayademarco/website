@@ -9,3 +9,7 @@ ul#playlist {
     border: 1px solid black;
     list-style-type: none;
 }
+a { 
+    color: goldenrod;
+    font-style: bold;
+}
