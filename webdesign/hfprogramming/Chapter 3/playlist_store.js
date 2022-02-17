@@ -1,8 +1,3 @@
-/* playlist_store.js
- * 
- * Ready-bake code to store and retrieve playlist items
- */
-
 function save(item) {
 	var playlistArray = getStoreArray("playlist");
 	playlistArray.push(item);
