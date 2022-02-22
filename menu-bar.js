@@ -16,9 +16,9 @@ var menuStr =
         <a href="`+directoryDepth+`website/webdesign/index.html" class="menu-bar__dropdown__content--link">Web Page Design</a>
     </div>
     </li>`
-    
-    <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Animation</a>
-    <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Architecture</a>
+
+   // <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Animation</a>
+   // <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Architecture</a>
 
 var menuList = document.getElementById("menu-bar");
 console.log(menuList);
