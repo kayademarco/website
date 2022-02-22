@@ -14,10 +14,11 @@ var menuStr =
     <a href="javascript:void(0)" class="menu-bar__dropdown__heading">Classes</a>
     <div class="menu-bar__dropdown__content">
         <a href="`+directoryDepth+`website/webdesign/index.html" class="menu-bar__dropdown__content--link">Web Page Design</a>
-        <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Animation</a>
-        <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Architecture</a>
     </div>
     </li>`
+    
+    <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Animation</a>
+    <a href="`+directoryDepth+`" class="menu-bar__dropdown__content--link">Architecture</a>
 
 var menuList = document.getElementById("menu-bar");
 console.log(menuList);
