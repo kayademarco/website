@@ -13,7 +13,7 @@ var menuStr =
     <li class="menu-bar__dropdown">
     <a href="javascript:void(0)" class="menu-bar__dropdown__heading">Classes</a>
     <div class="menu-bar__dropdown__content">
-    <a href="`+directoryDepth+`website/webdesign/headfirst/hfprogramming/Chapter 9" class="menu-bar__dropdown__content--link">Current Web Work</a>
+    <a href="`+directoryDepth+`website/webdesign/headfirst/hfprogramming/Chapter 9/index.html" class="menu-bar__dropdown__content--link">Current Web Work</a>
         <a href="`+directoryDepth+`website/webdesign/index.html" class="menu-bar__dropdown__content--link">Web Page Design</a>
     </div>
     </li>`
