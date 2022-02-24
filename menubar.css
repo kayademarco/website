@@ -33,8 +33,9 @@ footer {
 /* CSS3 dropdown menu */
 ul#mainmenu {
     text-align: center;
-    border-style: ridge;
-    border-inline-color: white;
+    border-style: solid;
+    border-radius: 2cm;
+    border-color: white;
 }
 ul#mainmenu > li {
     position: relative;
