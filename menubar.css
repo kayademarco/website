@@ -40,8 +40,7 @@ ul#mainmenu > li {
 }
 ul#mainmenu > li > button {
     background-color: #333;
-    color: #F00;
-    font-family: 'Creepster', cursive;
+    color: rgb(26, 122, 74);
     font-weight: bold;
     padding: 16px;
     font-size: 16px;
@@ -51,7 +50,7 @@ ul#mainmenu > li > button {
     border-radius: 50%;
 }
 ul#mainmenu > li > button:hover {
-    background-color: #FFD700;
+    background-color: white;
 }
 ul#mainmenu > li:hover > nav {
     display: block;
@@ -59,7 +58,7 @@ ul#mainmenu > li:hover > nav {
 ul#mainmenu > li > nav {
     display: none;
     position: absolute;
-    background-color: #F9F9F9;
+    background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 ul#mainmenu > li > nav > a {
