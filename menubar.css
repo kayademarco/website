@@ -47,6 +47,7 @@ ul#mainmenu > li > button {
     border: none;
     cursor: pointer;
     min-width: 12em;
+    border-radius: 10%;
 }
 ul#mainmenu > li > button:hover {
     background-color: white;
