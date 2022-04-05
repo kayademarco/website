@@ -24,19 +24,48 @@
         });
     </script>
     <style>
-        
+               body {
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(41, 104, 85);
+           color: white;
+           text-align: center;
+       } 
+       h2, h3 {
+           color: white;
+           font-style: italic;
+           text-align: center;
+           border: 0.5cm;
+           border-style: solid;
+           border-radius: 1cm;
+           border-color: white;
+           padding: 0.5cm;
+       }
+       footer {
+           text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        a {
+            color: white;
+        }
+        a:visited {
+            color: rgb(119, 187, 167);
+        }
     </style>
 </head>
 <body>
 <section>
         <button id="hide_button">Hide Articles</button>
         <button id="show_button">Show Articles</button>
-        <article>This is my article. I have used jQuery to create hide 
+    <article>
+        <h2>This is my article.</h2> 
+        I have used jQuery to create hide 
         and show functions that allow you to open and close this portion 
-        of the text! Pretty cool right?</article>
+        of the text! Pretty cool right?
+        <br>
+        Check out some of my other CIW labs <a href="../index.html">here!</a>
+    </article>
 </section>
-
-
 <footer id="vLinks" style="text-align: center;">
     </footer>
     <script src="menu-bar.js"></script>
