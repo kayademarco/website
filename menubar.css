@@ -17,7 +17,11 @@ ul {
     border-style: solid;
     border-radius: 2cm;
     border-color: white;
-    display: inline;
+    display: inline-block;
+}
+button {
+    background-color: transparent;
+    outline: white;
 }
 a { 
     font-family: Arial, Helvetica, sans-serif;
