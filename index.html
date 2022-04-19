@@ -8,6 +8,29 @@
     <style>
        @import url(menubar.css);
     </style>
+<script>
+    {var countDownDate = new Date("Jun 15, 2023 12:00:00").getTime();
+
+    var x = setInterval(function(); 
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "SUMMER";
+  }
+</script>
 </head>
 <body>
 
@@ -42,6 +65,7 @@
     I have done for various <a href="https://careercenter.apsva.us/career-technical-education-cte/">CTE</a> courses! 
     You can also check out my resume and learn a bit more about me.
 </p>
+<p id="demo"></p>
 <footer id="vLinks" style="text-align: center;">
     </footer>
     <script src="menu-bar.js"></script>
