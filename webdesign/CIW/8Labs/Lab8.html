@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSERT NAME HERE</title>
+    <title>Lab 8</title>
+    <link rel="stylesheet" href="8labs.css">
     <style>
-        
     </style>
 </head>
 <body>
-
+<h2>Team Meal Signup</h2>
+<form>
+    <p>
+        <label for="firstp">Parent First Name:</label>
+        <input type="text" name="firstnamep" id="firstp"/>
+    </p>
+    <p>
+        <label for="lastp">Parent Last Name:</label>
+        <input type="text" name="lastnamep" id="lastp"/>
+    </p>
+    <p>
+        <label for="namec">Player Name</label>
+        <input type="text" name="playername" id="namec"/>
+    </p>
+    <p>
+        <label for="pnum">Player Number</label>
+        <input type="number" name="playernum" min="0" max="99" id="pnum"/>
+    </p>
+    <p>
+        <label for="mealnum">How many individual meals are you bringing? 0</label>
+        <input type="range" name="indmealnum" min="8" max="25" value="15" id="mealnum"/>25 
+    </p>
+    <p>
+        <label for="mealdate">Meal Date </label>
+        <input type="date" name="mealdate" id="mealdate"/>
+    </p>
+</form>
 
 <footer id="vLinks" style="text-align: center;">
     </footer>
