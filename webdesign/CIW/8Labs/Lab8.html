@@ -33,6 +33,19 @@
         <input type="range" name="indmealnum" min="8" max="25" value="15" id="mealnum"/>25 
     </p>
     <p>
+    Please let us know what type of meal you are bringing from these choices: 
+    Chicken nuggets, Sandwiches, Pizza, Salad, Burgers, Other.
+    <input list="meals" name="mealtype" id="meals" />
+    <datalist id="meals">
+        <option value="Chicken Nuggets">
+        <option value="Sandwiches">
+        <option value="Pizza">
+        <option value="Salad">
+        <option value="Burgers">
+        <option value="Other">
+    </datalist>
+    </p>
+    <p>
         <label for="mealdate">Meal Date </label>
         <input type="date" name="mealdate" id="mealdate"/>
     </p>
